@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">package</span> com<span style="color: #333333">.</span><span style="color: #0000CC">example</span><span style="color: #333333">.</span><span style="color: #0000CC">tp1</span><span style="color: #333333">.</span><span style="color: #0000CC">TP2</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.annotation.NonNull</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.annotation.Nullable</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.appcompat.app.AppCompatActivity</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.fragment.app.Fragment</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.fragment.app.FragmentManager</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.fragment.app.FragmentTransaction</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.content.Intent</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.LayoutInflater</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.Menu</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.MenuItem</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.View</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.ViewGroup</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Button</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Toast</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.Fragments.JAVA</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.Fragments.Notes</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.Fragments.XML</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.R</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.google.android.material.bottomnavigation.BottomNavigationView</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">TP2</span> <span style="color: #008800; font-weight: bold">extends</span> Fragment <span style="color: #333333">{</span>
+
+    <span style="color: #008800; font-weight: bold">private</span> MenuItem solution<span style="color: #333333">,</span> xml <span style="color: #333333">,</span> java <span style="color: #333333">,</span> notes<span style="color: #333333">;</span>
+    Button celsius<span style="color: #333333">,</span> kelvin <span style="color: #333333">,</span> fahrenheit<span style="color: #333333">;</span>
+    <span style="color: #555555; font-weight: bold">@Override</span>
+    <span style="color: #008800; font-weight: bold">public</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onViewCreated</span><span style="color: #333333">(</span><span style="color: #555555; font-weight: bold">@NonNull</span> View view<span style="color: #333333">,</span> <span style="color: #555555; font-weight: bold">@Nullable</span> Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        <span style="color: #008800; font-weight: bold">super</span><span style="color: #333333">.</span><span style="color: #0000CC">onViewCreated</span><span style="color: #333333">(</span>view<span style="color: #333333">,</span> savedInstanceState<span style="color: #333333">);</span>
+
+        initBottomNav<span style="color: #333333">();</span>
+
+        celsius <span style="color: #333333">=</span> view<span style="color: #333333">.</span><span style="color: #0000CC">findViewById</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Celsius</span><span style="color: #333333">);</span>
+        kelvin <span style="color: #333333">=</span> view<span style="color: #333333">.</span><span style="color: #0000CC">findViewById</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Kelvin</span><span style="color: #333333">);</span>
+        fahrenheit <span style="color: #333333">=</span> view<span style="color: #333333">.</span><span style="color: #0000CC">findViewById</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Fahrenheit</span><span style="color: #333333">);</span>
+
+        celsius<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>calcule<span style="color: #333333">);</span>
+        kelvin<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>calcule<span style="color: #333333">);</span>
+        fahrenheit<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>calcule<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+
+    <span style="color: #555555; font-weight: bold">@Override</span>
+    <span style="color: #008800; font-weight: bold">public</span> View <span style="color: #0066BB; font-weight: bold">onCreateView</span><span style="color: #333333">(</span>LayoutInflater inflater<span style="color: #333333">,</span> ViewGroup container<span style="color: #333333">,</span>
+                             Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        <span style="color: #888888">// Inflate the layout for this fragment</span>
+        <span style="color: #008800; font-weight: bold">return</span> inflater<span style="color: #333333">.</span><span style="color: #0000CC">inflate</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">tp2_activity_exo1</span><span style="color: #333333">,</span> container<span style="color: #333333">,</span> <span style="color: #008800; font-weight: bold">false</span><span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">calcule</span><span style="color: #333333">(</span>View view<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        Intent i<span style="color: #333333">;</span>
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>view <span style="color: #333333">==</span> celsius<span style="color: #333333">)</span>
+            i <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Intent<span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span>UniteCelsius<span style="color: #333333">.</span><span style="color: #0000CC">class</span><span style="color: #333333">);</span>
+         <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>view <span style="color: #333333">==</span> kelvin<span style="color: #333333">)</span>
+            i <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Intent<span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span>UniteKalvin<span style="color: #333333">.</span><span style="color: #0000CC">class</span><span style="color: #333333">);</span>
+         <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>view <span style="color: #333333">==</span> fahrenheit<span style="color: #333333">)</span>
+            i <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Intent<span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span>UniteFahrenheit<span style="color: #333333">.</span><span style="color: #0000CC">class</span><span style="color: #333333">);</span>
+        <span style="color: #008800; font-weight: bold">else</span><span style="color: #333333">{</span>
+            Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span> <span style="background-color: #fff0f0">&quot;error !!&quot;</span><span style="color: #333333">,</span> Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+            <span style="color: #008800; font-weight: bold">return</span><span style="color: #333333">;</span>
+        <span style="color: #333333">}</span>
+
+        startActivity<span style="color: #333333">(</span>i<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+
+
+
+    <span style="color: #888888">//bottom nav</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">initBottomNav</span><span style="color: #333333">(){</span>
+        BottomNavigationView nav <span style="color: #333333">=</span> getView<span style="color: #333333">().</span><span style="color: #0000CC">findViewById</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">bottom</span><span style="color: #333333">);</span>
+        Menu bottom <span style="color: #333333">=</span> nav<span style="color: #333333">.</span><span style="color: #0000CC">getMenu</span><span style="color: #333333">();</span>
+        solution <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Solution</span><span style="color: #333333">);</span>
+        xml <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">XML</span><span style="color: #333333">);</span>
+        java <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">JAVA</span><span style="color: #333333">);</span>
+        notes <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Notes</span><span style="color: #333333">);</span>
+
+        solution<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+        xml<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+        java<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+        notes<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> Fragment currentFrag<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">boolean</span> <span style="color: #0066BB; font-weight: bold">bottomNavClicked</span><span style="color: #333333">(</span>MenuItem menuItem<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        menuItem<span style="color: #333333">.</span><span style="color: #0000CC">setChecked</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">true</span><span style="color: #333333">);</span>
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> solution<span style="color: #333333">)</span>
+            home<span style="color: #333333">(</span>currentFrag<span style="color: #333333">);</span>
+
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> xml<span style="color: #333333">)</span>
+            navigate<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;xml code&quot;</span> <span style="color: #333333">,</span> currentFrag <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> XML<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP2_part1/xml_tp_part1.html&quot;</span><span style="color: #333333">));</span>
+
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> java<span style="color: #333333">)</span>
+            navigate<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Java code&quot;</span> <span style="color: #333333">,</span> currentFrag <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> JAVA<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP2_part1/code_tp_part1.html&quot;</span><span style="color: #333333">));</span>
+
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> notes<span style="color: #333333">)</span>
+            navigate<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;notes&quot;</span> <span style="color: #333333">,</span> currentFrag <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Notes<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP2_part1_notes&quot;</span><span style="color: #333333">));</span>
+
+        <span style="color: #008800; font-weight: bold">else</span>
+            Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span><span style="background-color: #fff0f0">&quot;Error !! &quot;</span><span style="color: #333333">,</span>Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_LONG</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #008800; font-weight: bold">true</span><span style="color: #333333">;</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">home</span><span style="color: #333333">(</span>Fragment currentFrag<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span> <span style="background-color: #fff0f0">&quot;Solution Selected !!&quot;</span><span style="color: #333333">,</span>Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>currentFrag <span style="color: #333333">==</span> <span style="color: #008800; font-weight: bold">null</span><span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">return</span><span style="color: #333333">;</span>
+
+        <span style="color: #888888">//get manager of all fragments associated with this activity</span>
+        FragmentManager fragmentManager <span style="color: #333333">=</span> getParentFragmentManager<span style="color: #333333">();</span>
+        <span style="color: #888888">//start series of edits on the associated fragments</span>
+        FragmentTransaction fragmentTransaction <span style="color: #333333">=</span> fragmentManager<span style="color: #333333">.</span><span style="color: #0000CC">beginTransaction</span><span style="color: #333333">();</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">remove</span><span style="color: #333333">(</span>currentFrag<span style="color: #333333">);</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">commit</span><span style="color: #333333">();</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">replaceFrag</span><span style="color: #333333">(</span>Fragment fragment<span style="color: #333333">){</span>
+        FragmentManager fragmentManager <span style="color: #333333">=</span> getParentFragmentManager<span style="color: #333333">();</span>
+        FragmentTransaction fragmentTransaction <span style="color: #333333">=</span> fragmentManager<span style="color: #333333">.</span><span style="color: #0000CC">beginTransaction</span><span style="color: #333333">();</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">replace</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">main_vieww</span><span style="color: #333333">,</span>fragment<span style="color: #333333">);</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">commit</span><span style="color: #333333">();</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">navigate</span><span style="color: #333333">(</span>String msg <span style="color: #333333">,</span> Fragment to<span style="color: #333333">){</span>
+        Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span>getActivity<span style="color: #333333">().</span><span style="color: #0000CC">getApplicationContext</span><span style="color: #333333">(),</span>msg <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; Selected !!&quot;</span><span style="color: #333333">,</span>Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+        replaceFrag<span style="color: #333333">(</span>to<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+</pre></td></tr></table></div>
+
+</body>
+</html>

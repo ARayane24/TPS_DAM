@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="desc">Ben M\'hidi commanda initialement la Wilaya V (la circonscription militaire de la région d\'Oran) et joua un rôle important lors de la conférence de la Soummam du FLN en août 1956. Il dirigea les opérations du FLN pendant la bataille d\'Alger où il fut le dernier membre du Comité du FLN. de Coordination et d\'Exécution (CCE; Comité de Coordination et de Mise en Œuvre). Ben M\'hidi croyait fermement que la révolution devait être dirigée par des révolutionnaires « internes » plutôt que « externes ».</string>
+    <string name="ben_m_hidi">Ben M\'hidi :</string>
+    <string name="style1">style1</string>
+    <string name="style2">style2</string>
+    <string name="style3">style3</string>
+    <string name="default_style">default</string>
+    <string name="add_new_note">add new note</string>
+</resources>

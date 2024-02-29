@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TP1</string>
+    <string name="desc">تولى بن مهيدي في البداية قيادة الولاية الخامسة (المنطقة العسكرية في منطقة وهران) ولعب دورًا مهمًا في مؤتمر جبهة التحرير الوطني بالصومام في أغسطس 1956. وترأس عمليات جبهة التحرير الوطني خلال معركة الجزائر حيث كان آخر عضو في لجنة جبهة التحرير الوطني. دي التنسيق والتنفيذ (CCE؛ لجنة التنسيق والتنفيذ). كان بن مهيدي مؤمناً بشدة بضرورة إدارة الثورة من قبل ثوار \"داخليين\" وليس \"خارجيين\".</string>
+    <string name="ben_m_hidi">بن مهدي :</string>
+    <string name="style1">style1</string>
+    <string name="style2">style2</string>
+    <string name="style3">style3</string>
+    <string name="default_style">default</string>
+    <string name="add_new_note">add new note</string>
+</resources>

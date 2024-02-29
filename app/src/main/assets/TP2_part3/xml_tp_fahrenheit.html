@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">
+ 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #557799">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<span style="color: #007700">&lt;androidx.constraintlayout.widget.ConstraintLayout</span> <span style="color: #0000CC">xmlns:android=</span><span style="background-color: #fff0f0">&quot;http://schemas.android.com/apk/res/android&quot;</span>
+    <span style="color: #0000CC">xmlns:app=</span><span style="background-color: #fff0f0">&quot;http://schemas.android.com/apk/res-auto&quot;</span>
+    <span style="color: #0000CC">xmlns:tools=</span><span style="background-color: #fff0f0">&quot;http://schemas.android.com/tools&quot;</span>
+    <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+    <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+    <span style="color: #0000CC">tools:context=</span><span style="background-color: #fff0f0">&quot;.TP1.Exo4&quot;</span><span style="color: #007700">&gt;</span>
+    <span style="color: #007700">&lt;androidx.constraintlayout.widget.ConstraintLayout</span>
+        <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/main_view&quot;</span>
+        <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+        <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;0dp&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintBottom_toTopOf=</span><span style="background-color: #fff0f0">&quot;@id/bottom&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintEnd_toEndOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintStart_toStartOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintTop_toTopOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span><span style="color: #007700">&gt;</span>
+
+        <span style="color: #007700">&lt;LinearLayout</span>
+            <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/input&quot;</span>
+            <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+            <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+            <span style="color: #0000CC">android:padding=</span><span style="background-color: #fff0f0">&quot;10dp&quot;</span>
+            <span style="color: #0000CC">app:layout_constraintTop_toTopOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+            <span style="color: #0000CC">app:layout_constraintRight_toRightOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+            <span style="color: #0000CC">app:layout_constraintLeft_toLeftOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span><span style="color: #007700">&gt;</span>
+            <span style="color: #007700">&lt;com.google.android.material.textfield.TextInputLayout</span>
+                <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;0dp&quot;</span>
+                <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+                <span style="color: #0000CC">android:layout_weight=</span><span style="background-color: #fff0f0">&quot;1&quot;</span>
+                <span style="color: #0000CC">app:counterEnabled=</span><span style="background-color: #fff0f0">&quot;true&quot;</span>
+                <span style="color: #0000CC">app:counterMaxLength=</span><span style="background-color: #fff0f0">&quot;20&quot;</span>
+                <span style="color: #0000CC">app:endIconMode=</span><span style="background-color: #fff0f0">&quot;clear_text&quot;</span>
+                <span style="color: #007700">&gt;</span>
+                <span style="color: #007700">&lt;com.google.android.material.textfield.TextInputEditText</span>
+                    <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/verb&quot;</span>
+                    <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+                    <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+                    <span style="color: #0000CC">android:inputType=</span><span style="background-color: #fff0f0">&quot;text&quot;</span>
+                    <span style="color: #0000CC">android:singleLine=</span><span style="background-color: #fff0f0">&quot;true&quot;</span>
+                    <span style="color: #0000CC">android:maxLength=</span><span style="background-color: #fff0f0">&quot;21&quot;</span>
+                    <span style="color: #0000CC">android:hint=</span><span style="background-color: #fff0f0">&quot;verb 1er gpe ...&quot;</span> <span style="color: #007700">/&gt;</span>
+            <span style="color: #007700">&lt;/com.google.android.material.textfield.TextInputLayout&gt;</span>
+
+            <span style="color: #007700">&lt;Button</span>
+                <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/conjuguer&quot;</span>
+                <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+                <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+                <span style="color: #0000CC">android:text=</span><span style="background-color: #fff0f0">&quot;Conjuguer&quot;</span>
+                <span style="color: #0000CC">android:layout_margin=</span><span style="background-color: #fff0f0">&quot;5dp&quot;</span><span style="color: #007700">/&gt;</span>
+        <span style="color: #007700">&lt;/LinearLayout&gt;</span>
+        <span style="color: #007700">&lt;TextView</span>
+            <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/resultConjug&quot;</span>
+            <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+            <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+            <span style="color: #0000CC">android:layout_margin=</span><span style="background-color: #fff0f0">&quot;20dp&quot;</span>
+            <span style="color: #0000CC">app:layout_constraintTop_toBottomOf=</span><span style="background-color: #fff0f0">&quot;@+id/input&quot;</span>
+            <span style="color: #0000CC">app:layout_constraintRight_toRightOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+            <span style="color: #0000CC">app:layout_constraintLeft_toLeftOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span><span style="color: #007700">/&gt;</span>
+    <span style="color: #007700">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+
+    <span style="color: #007700">&lt;com.google.android.material.bottomnavigation.BottomNavigationView</span>
+        <span style="color: #0000CC">android:id=</span><span style="background-color: #fff0f0">&quot;@+id/bottom&quot;</span>
+        <span style="color: #0000CC">android:layout_width=</span><span style="background-color: #fff0f0">&quot;match_parent&quot;</span>
+        <span style="color: #0000CC">android:layout_height=</span><span style="background-color: #fff0f0">&quot;wrap_content&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintBottom_toBottomOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintEnd_toEndOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintHorizontal_bias=</span><span style="background-color: #fff0f0">&quot;0.0&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintStart_toStartOf=</span><span style="background-color: #fff0f0">&quot;parent&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintTop_toBottomOf=</span><span style="background-color: #fff0f0">&quot;@+id/main_view&quot;</span>
+        <span style="color: #0000CC">app:layout_constraintVertical_bias=</span><span style="background-color: #fff0f0">&quot;1.0&quot;</span>
+        <span style="color: #0000CC">app:menu=</span><span style="background-color: #fff0f0">&quot;@menu/bottom_menu&quot;</span> <span style="color: #007700">/&gt;</span>
+<span style="color: #007700">&lt;/androidx.constraintlayout.widget.ConstraintLayout&gt;</span>
+</pre></td></tr></table></div>
+
+</body>
+</html>

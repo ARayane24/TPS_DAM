@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:background="@drawable/tag_shape">
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Title"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Created_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created at : "
+        android:textColor="#7C7C7C"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <TextView
+        android:id="@+id/Last_modification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last modification : "
+        android:textColor="#7C7C7C"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/Created_at"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:minHeight="50dp"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Last_modification"
+        >
+
+        <LinearLayout
+            android:id="@+id/Tags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

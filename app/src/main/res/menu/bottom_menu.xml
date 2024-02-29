@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/Solution"
+            android:title="Solution"
+            android:titleCondensed="S"
+            android:icon="@drawable/done_black"/>
+
+        <item android:id="@+id/JAVA"
+            android:title="Java"
+            android:titleCondensed="J"
+
+            android:icon="@drawable/icn_code"/>
+
+        <item android:id="@+id/XML"
+            android:title="XML"
+            android:titleCondensed="X"
+
+            android:icon="@drawable/icn_xml"
+            />
+
+        <item android:id="@+id/Notes"
+            android:title="Notes"
+            android:titleCondensed="N"
+            android:icon="@drawable/icn_notes"/>
+    </group>
+</menu>

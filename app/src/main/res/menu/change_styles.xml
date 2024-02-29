@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/theme_menu" android:visible="false">
+        <item android:id="@+id/default_style"
+            android:title="@string/default_style"/>
+        <item android:id="@+id/style1"
+            android:title="@string/style1"/>
+        <item android:id="@+id/style2"
+            android:title="@string/style2"/>
+        <item android:id="@+id/style3"
+            android:title="@string/style3"/>
+    </group>
+</menu>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><table><tr><td><pre style="margin: 0; line-height: 125%">
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+ 10
+ 11
+ 12
+ 13
+ 14
+ 15
+ 16
+ 17
+ 18
+ 19
+ 20
+ 21
+ 22
+ 23
+ 24
+ 25
+ 26
+ 27
+ 28
+ 29
+ 30
+ 31
+ 32
+ 33
+ 34
+ 35
+ 36
+ 37
+ 38
+ 39
+ 40
+ 41
+ 42
+ 43
+ 44
+ 45
+ 46
+ 47
+ 48
+ 49
+ 50
+ 51
+ 52
+ 53
+ 54
+ 55
+ 56
+ 57
+ 58
+ 59
+ 60
+ 61
+ 62
+ 63
+ 64
+ 65
+ 66
+ 67
+ 68
+ 69
+ 70
+ 71
+ 72
+ 73
+ 74
+ 75
+ 76
+ 77
+ 78
+ 79
+ 80
+ 81
+ 82
+ 83
+ 84
+ 85
+ 86
+ 87
+ 88
+ 89
+ 90
+ 91
+ 92
+ 93
+ 94
+ 95
+ 96
+ 97
+ 98
+ 99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126</pre></td><td><pre style="margin: 0; line-height: 125%"><span style="color: #008800; font-weight: bold">package</span> com<span style="color: #333333">.</span><span style="color: #0000CC">example</span><span style="color: #333333">.</span><span style="color: #0000CC">tp1</span><span style="color: #333333">.</span><span style="color: #0000CC">TP1</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.appcompat.app.AppCompatActivity</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.fragment.app.Fragment</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.fragment.app.FragmentManager</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">androidx.fragment.app.FragmentTransaction</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.os.Bundle</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.Menu</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.view.MenuItem</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Button</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.TextView</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">android.widget.Toast</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.Fragments.JAVA</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.Fragments.Notes</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.Fragments.XML</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.example.tp1.R</span><span style="color: #333333">;</span>
+<span style="color: #008800; font-weight: bold">import</span> <span style="color: #0e84b5; font-weight: bold">com.google.android.material.bottomnavigation.BottomNavigationView</span><span style="color: #333333">;</span>
+
+<span style="color: #008800; font-weight: bold">public</span> <span style="color: #008800; font-weight: bold">class</span> <span style="color: #BB0066; font-weight: bold">Exo3</span> <span style="color: #008800; font-weight: bold">extends</span> AppCompatActivity <span style="color: #333333">{</span>
+    TextView a<span style="color: #333333">,</span> b<span style="color: #333333">,</span> c<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> MenuItem solution<span style="color: #333333">,</span> xml <span style="color: #333333">,</span> java <span style="color: #333333">,</span> notes<span style="color: #333333">;</span>
+
+    <span style="color: #555555; font-weight: bold">@Override</span>
+    <span style="color: #008800; font-weight: bold">protected</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">onCreate</span><span style="color: #333333">(</span>Bundle savedInstanceState<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        <span style="color: #008800; font-weight: bold">super</span><span style="color: #333333">.</span><span style="color: #0000CC">onCreate</span><span style="color: #333333">(</span>savedInstanceState<span style="color: #333333">);</span>
+        setContentView<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">layout</span><span style="color: #333333">.</span><span style="color: #0000CC">tp1_activity_exo3</span><span style="color: #333333">);</span>
+        initBottomNav<span style="color: #333333">();</span>
+        <span style="color: #008800; font-weight: bold">try</span> <span style="color: #333333">{</span>
+            String message <span style="color: #333333">=</span> getIntent<span style="color: #333333">().</span><span style="color: #0000CC">getStringExtra</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Exo&quot;</span><span style="color: #333333">);</span>
+            Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">,</span> message<span style="color: #333333">,</span> Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+            getSupportActionBar<span style="color: #333333">().</span><span style="color: #0000CC">setTitle</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP1 &quot;</span> <span style="color: #333333">+</span> message<span style="color: #333333">);</span>
+
+        <span style="color: #333333">}</span><span style="color: #008800; font-weight: bold">catch</span> <span style="color: #333333">(</span>Exception e<span style="color: #333333">){</span>
+            Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;no intent !!&quot;</span><span style="color: #333333">,</span> Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+        <span style="color: #333333">}</span>
+
+        a <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">a</span><span style="color: #333333">);</span>
+        b <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">b</span><span style="color: #333333">);</span>
+        c <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">c</span><span style="color: #333333">);</span>
+
+        Button reset <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">reset</span><span style="color: #333333">);</span>
+        Button cal <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">solve</span><span style="color: #333333">);</span>
+        TextView solution <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">solution</span><span style="color: #333333">);</span>
+        reset<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span>e<span style="color: #333333">-&gt;{</span>a<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #333333">);</span>b<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #333333">);</span>c<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;&quot;</span><span style="color: #333333">);});</span>
+        cal<span style="color: #333333">.</span><span style="color: #0000CC">setOnClickListener</span><span style="color: #333333">(</span>e<span style="color: #333333">-&gt;{</span>
+            <span style="color: #333399; font-weight: bold">double</span> aa<span style="color: #333333">,</span>bb<span style="color: #333333">,</span>cc<span style="color: #333333">;</span>
+            <span style="color: #008800; font-weight: bold">try</span> <span style="color: #333333">{</span>
+                aa <span style="color: #333333">=</span> Double<span style="color: #333333">.</span><span style="color: #0000CC">parseDouble</span><span style="color: #333333">(</span>a<span style="color: #333333">.</span><span style="color: #0000CC">getText</span><span style="color: #333333">().</span><span style="color: #0000CC">toString</span><span style="color: #333333">());</span>
+                bb <span style="color: #333333">=</span> Double<span style="color: #333333">.</span><span style="color: #0000CC">parseDouble</span><span style="color: #333333">(</span>b<span style="color: #333333">.</span><span style="color: #0000CC">getText</span><span style="color: #333333">().</span><span style="color: #0000CC">toString</span><span style="color: #333333">());</span>
+                cc <span style="color: #333333">=</span> Double<span style="color: #333333">.</span><span style="color: #0000CC">parseDouble</span><span style="color: #333333">(</span>c<span style="color: #333333">.</span><span style="color: #0000CC">getText</span><span style="color: #333333">().</span><span style="color: #0000CC">toString</span><span style="color: #333333">());</span>
+            <span style="color: #333333">}</span><span style="color: #008800; font-weight: bold">catch</span> <span style="color: #333333">(</span>Exception ex<span style="color: #333333">){</span>
+                <span style="color: #008800; font-weight: bold">return</span><span style="color: #333333">;</span>
+            <span style="color: #333333">}</span>
+
+            <span style="color: #333399; font-weight: bold">double</span> del <span style="color: #333333">=</span> bb<span style="color: #333333">*</span>bb <span style="color: #333333">-</span> <span style="color: #0000DD; font-weight: bold">4</span> <span style="color: #333333">*</span>aa<span style="color: #333333">*</span>cc<span style="color: #333333">;</span>
+            <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>del<span style="color: #333333">&gt;</span><span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">){</span>
+                solution<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;X1 : &quot;</span> <span style="color: #333333">+</span> String<span style="color: #333333">.</span><span style="color: #0000CC">valueOf</span><span style="color: #333333">((-</span>bb<span style="color: #333333">+</span>Math<span style="color: #333333">.</span><span style="color: #0000CC">sqrt</span><span style="color: #333333">(</span>del<span style="color: #333333">))/(</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>aa<span style="color: #333333">))</span> <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; X2 : &quot;</span> <span style="color: #333333">+</span> String<span style="color: #333333">.</span><span style="color: #0000CC">valueOf</span><span style="color: #333333">((-</span>bb<span style="color: #333333">-</span>Math<span style="color: #333333">.</span><span style="color: #0000CC">sqrt</span><span style="color: #333333">(</span>del<span style="color: #333333">))/(</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>aa<span style="color: #333333">)));</span>
+            <span style="color: #333333">}</span> <span style="color: #008800; font-weight: bold">else</span> <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>del <span style="color: #333333">==</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">)</span> <span style="color: #333333">{</span>
+                solution<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;X1,x2 : &quot;</span> <span style="color: #333333">+</span> String<span style="color: #333333">.</span><span style="color: #0000CC">valueOf</span><span style="color: #333333">((-</span>bb<span style="color: #333333">+</span>Math<span style="color: #333333">.</span><span style="color: #0000CC">sqrt</span><span style="color: #333333">(</span>del<span style="color: #333333">))/(</span><span style="color: #0000DD; font-weight: bold">2</span><span style="color: #333333">*</span>aa<span style="color: #333333">)));</span>
+            <span style="color: #333333">}</span> <span style="color: #008800; font-weight: bold">else</span> <span style="color: #333333">{</span>
+                solution<span style="color: #333333">.</span><span style="color: #0000CC">setText</span><span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;No solution !!&quot;</span><span style="color: #333333">);</span>
+            <span style="color: #333333">}</span>
+        <span style="color: #333333">});</span>
+    <span style="color: #333333">}</span>
+
+
+
+    <span style="color: #888888">//bottom nav</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">initBottomNav</span><span style="color: #333333">(){</span>
+        BottomNavigationView nav <span style="color: #333333">=</span> findViewById<span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">bottom</span><span style="color: #333333">);</span>
+        Menu bottom <span style="color: #333333">=</span> nav<span style="color: #333333">.</span><span style="color: #0000CC">getMenu</span><span style="color: #333333">();</span>
+        solution <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Solution</span><span style="color: #333333">);</span>
+        xml <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">XML</span><span style="color: #333333">);</span>
+        java <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">JAVA</span><span style="color: #333333">);</span>
+        notes <span style="color: #333333">=</span> bottom<span style="color: #333333">.</span><span style="color: #0000CC">findItem</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">Notes</span><span style="color: #333333">);</span>
+
+        solution<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+        xml<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+        java<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+        notes<span style="color: #333333">.</span><span style="color: #0000CC">setOnMenuItemClickListener</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">::</span>bottomNavClicked<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> Fragment currentFrag<span style="color: #333333">;</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">boolean</span> <span style="color: #0066BB; font-weight: bold">bottomNavClicked</span><span style="color: #333333">(</span>MenuItem menuItem<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        menuItem<span style="color: #333333">.</span><span style="color: #0000CC">setChecked</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">true</span><span style="color: #333333">);</span>
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> solution<span style="color: #333333">)</span>
+            home<span style="color: #333333">(</span>currentFrag<span style="color: #333333">);</span>
+
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> xml<span style="color: #333333">)</span>
+            navigate<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;xml code&quot;</span> <span style="color: #333333">,</span> currentFrag <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> XML<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP1_exo3/xml_tp_exo3.html&quot;</span><span style="color: #333333">));</span>
+
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> java<span style="color: #333333">)</span>
+            navigate<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;Java code&quot;</span> <span style="color: #333333">,</span> currentFrag <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> JAVA<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP1_exo3/code_tp_exo3.html&quot;</span><span style="color: #333333">));</span>
+
+        <span style="color: #008800; font-weight: bold">else</span> <span style="color: #0066BB; font-weight: bold">if</span> <span style="color: #333333">(</span>menuItem <span style="color: #333333">==</span> notes<span style="color: #333333">)</span>
+            navigate<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;notes&quot;</span> <span style="color: #333333">,</span> currentFrag <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> Notes<span style="color: #333333">(</span><span style="background-color: #fff0f0">&quot;TP1_exo3_notes&quot;</span><span style="color: #333333">));</span>
+
+        <span style="color: #008800; font-weight: bold">else</span>
+            Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">,</span><span style="background-color: #fff0f0">&quot;Error !! &quot;</span><span style="color: #333333">,</span>Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_LONG</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+
+        <span style="color: #008800; font-weight: bold">return</span> <span style="color: #008800; font-weight: bold">true</span><span style="color: #333333">;</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">home</span><span style="color: #333333">(</span>Fragment currentFrag<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">,</span> <span style="background-color: #fff0f0">&quot;Solution Selected !!&quot;</span><span style="color: #333333">,</span>Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+
+        <span style="color: #008800; font-weight: bold">if</span> <span style="color: #333333">(</span>currentFrag <span style="color: #333333">==</span> <span style="color: #008800; font-weight: bold">null</span><span style="color: #333333">)</span> <span style="color: #008800; font-weight: bold">return</span><span style="color: #333333">;</span>
+
+        <span style="color: #888888">//get manager of all fragments associated with this activity</span>
+        FragmentManager fragmentManager <span style="color: #333333">=</span> getSupportFragmentManager<span style="color: #333333">();</span>
+        <span style="color: #888888">//start series of edits on the associated fragments</span>
+        FragmentTransaction fragmentTransaction <span style="color: #333333">=</span> fragmentManager<span style="color: #333333">.</span><span style="color: #0000CC">beginTransaction</span><span style="color: #333333">();</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">remove</span><span style="color: #333333">(</span>currentFrag<span style="color: #333333">);</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">commit</span><span style="color: #333333">();</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">replaceFrag</span><span style="color: #333333">(</span>Fragment fragment<span style="color: #333333">){</span>
+        FragmentManager fragmentManager <span style="color: #333333">=</span> getSupportFragmentManager<span style="color: #333333">();</span>
+        FragmentTransaction fragmentTransaction <span style="color: #333333">=</span> fragmentManager<span style="color: #333333">.</span><span style="color: #0000CC">beginTransaction</span><span style="color: #333333">();</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">replace</span><span style="color: #333333">(</span>R<span style="color: #333333">.</span><span style="color: #0000CC">id</span><span style="color: #333333">.</span><span style="color: #0000CC">main_view</span><span style="color: #333333">,</span>fragment<span style="color: #333333">);</span>
+        fragmentTransaction<span style="color: #333333">.</span><span style="color: #0000CC">commit</span><span style="color: #333333">();</span>
+    <span style="color: #333333">}</span>
+    <span style="color: #008800; font-weight: bold">private</span> <span style="color: #333399; font-weight: bold">void</span> <span style="color: #0066BB; font-weight: bold">navigate</span><span style="color: #333333">(</span>String msg <span style="color: #333333">,</span> Fragment to<span style="color: #333333">){</span>
+        Toast<span style="color: #333333">.</span><span style="color: #0000CC">makeText</span><span style="color: #333333">(</span><span style="color: #008800; font-weight: bold">this</span><span style="color: #333333">,</span>msg <span style="color: #333333">+</span> <span style="background-color: #fff0f0">&quot; Selected !!&quot;</span><span style="color: #333333">,</span>Toast<span style="color: #333333">.</span><span style="color: #0000CC">LENGTH_SHORT</span><span style="color: #333333">).</span><span style="color: #0000CC">show</span><span style="color: #333333">();</span>
+        replaceFrag<span style="color: #333333">(</span>to<span style="color: #333333">);</span>
+    <span style="color: #333333">}</span>
+<span style="color: #333333">}</span>
+</pre></td></tr></table></div>
+
+</body>
+</html>

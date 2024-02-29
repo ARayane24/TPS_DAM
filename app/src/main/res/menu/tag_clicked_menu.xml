@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item android:id="@+id/edit"
+            android:title="Edit"
+            android:icon="@drawable/icn_add_note"/>
+        <item android:id="@+id/remove"
+            android:title="Remove"
+            android:icon="@drawable/icn_delete" />
+    </group>
+</menu>

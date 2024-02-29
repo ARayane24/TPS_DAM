@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+    <group android:id="@+id/kkk" android:checkableBehavior="single">
+        <item
+            android:id="@+id/Home"
+            android:contentDescription="All notes"
+            android:icon="@drawable/home_black"
+            android:tooltipText="Home"
+            android:title="Home"/>
+
+        <item android:title="Solutions:"
+            android:icon="@drawable/done_black"
+            >
+            <menu >
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/tp1"
+                        android:contentDescription="solution de tp 1"
+                        android:icon="@drawable/done_black"
+                        android:tooltipText="tp1"
+                        android:title="TP 1"/>
+                    <item
+                        android:id="@+id/tp2"
+                        android:contentDescription="solution de tp 2"
+                        android:icon="@drawable/done_black"
+                        android:tooltipText="tp2"
+                        android:title="TP 2"/>
+                    <item
+                        android:id="@+id/tp3"
+                        android:contentDescription="solution de tp 3"
+                        android:icon="@drawable/done_black"
+                        android:tooltipText="tp3"
+                        android:title="TP 3"/>
+                    <item
+                        android:id="@+id/tp4"
+                        android:contentDescription="solution de tp 4"
+                        android:tooltipText="tp4"
+                        android:title="TP 4"/>
+                </group>
+            </menu>
+
+        </item>
+
+    </group>
+
+</menu>

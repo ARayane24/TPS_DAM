@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="style2">style2</string>
+    <string name="style3">style3</string>
+    <string name="default_style">default</string>
+    <string name="add_new_note">add new note</string>
+</resources>
