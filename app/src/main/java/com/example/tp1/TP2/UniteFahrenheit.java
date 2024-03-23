@@ -28,7 +28,7 @@ public class UniteFahrenheit extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tp2_activity_exo1_unite_fahrenheit);
-        getSupportActionBar().setTitle("Exo 4 ");
+        //getSupportActionBar().setTitle("Exo 4 ");
 
         initBottomNav();
 

@@ -2,6 +2,8 @@ package com.example.tp1;
 
 import android.content.ClipData;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.Menu;
@@ -24,12 +26,13 @@ import androidx.fragment.app.FragmentTransaction;
 import com.example.tp1.TP1.TP1;
 import com.example.tp1.TP2.TP2;
 import com.example.tp1.TP3.TP3;
+import com.example.tp1.TP5.TP5;
 import com.google.android.material.navigation.NavigationView;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    MenuItem Home , Tp1 , Tp2 , Tp3 , Tp4;
+    MenuItem Home , Tp1 , Tp2 , Tp3 , Tp4 , Tp5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
         Tp2.setOnMenuItemClickListener(this::navigateTo);
         Tp3.setOnMenuItemClickListener(this::navigateTo);
         Tp4.setOnMenuItemClickListener(this::navigateTo);
+        Tp5.setOnMenuItemClickListener(this::navigateTo);
 
         navigateTo(Home);
     }
@@ -67,7 +71,12 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this,"Tp 4 ",Toast.LENGTH_SHORT).show();
             return false;
 
-        }else
+
+        }
+        else if (menuItem == Tp5)
+            navigate("Tp 5" , new TP5());
+
+        else
             Toast.makeText(this,"Error !! ",Toast.LENGTH_LONG).show();
 
         return true;
@@ -82,6 +91,7 @@ public class MainActivity extends AppCompatActivity {
         Tp2 = menu.findItem(R.id.tp2);
         Tp3 = menu.findItem(R.id.tp3);
         Tp4 = menu.findItem(R.id.tp4);
+        Tp5 = menu.findItem(R.id.tp5);
 
         menu_button.setOnClickListener(e->{
             DrawerLayout layout = findViewById(R.id.drawer_layout);
@@ -117,4 +127,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
+
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult( requestCode, resultCode, data);
+        switch (requestCode ){
+            case 0:
+                if (resultCode == RESULT_OK){
+                    Bundle bundle = data.getExtras();
+                    Bitmap bmp = (Bitmap) bundle.get("data");
+                    Bitmap resized = Bitmap.createScaledBitmap(bmp, 100 ,100, true);
+                    binding.img.setImageBitmap(resized);
+                    break;
+                }
+            case 1:
+                if (resultCode == RESULT_OK){
+                    Uri selectedImage = data.getData() ;
+                    binding.img.setImageURI (selectedImage);
+                    break;
+                }
+
+        }
+    }
 }

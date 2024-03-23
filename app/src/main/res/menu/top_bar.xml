@@ -39,6 +39,12 @@
                         android:contentDescription="solution de tp 4"
                         android:tooltipText="tp4"
                         android:title="TP 4"/>
+                    <item
+                        android:id="@+id/tp5"
+                        android:contentDescription="solution de tp 5"
+                        android:tooltipText="tp5"
+                        android:icon="@drawable/done_black"
+                        android:title="TP 5"/>
                 </group>
             </menu>
 

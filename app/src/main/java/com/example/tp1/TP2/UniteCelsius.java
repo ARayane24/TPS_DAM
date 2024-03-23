@@ -34,7 +34,7 @@ public class UniteCelsius extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.tp2_activity_exo1_unite_celsius);
-        getSupportActionBar().setTitle("Exo 4 ");
+        //getSupportActionBar().setTitle("Exo 4 ");
 
         initBottomNav();
 

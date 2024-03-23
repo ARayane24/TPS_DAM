@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".TP5.TP5">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:src="@mipmap/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageButton
+                android:id="@+id/add_fromCamera"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:src="@drawable/camera"
+                android:layout_margin="5dp"
+                />
+            <ImageButton
+                android:id="@+id/add_fromGall"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:src="@drawable/add_photo"
+                android:layout_margin="5dp"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp">
+        <TextView
+            android:id="@+id/lb_mat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matricule"
+            android:layout_alignTop="@id/mat"
+            android:layout_alignBottom="@id/mat"
+            android:gravity="center"
+
+            />
+
+        <EditText
+            android:id="@+id/mat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/lb_mat"
+            />
+
+
+
+        <TextView
+            android:id="@+id/lb_nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom"
+            android:layout_below="@id/lb_mat"
+            android:layout_alignEnd="@id/lb_mat"
+            android:layout_alignParentStart="true"
+            android:layout_alignBaseline="@id/nom"
+            />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/lb_nom"
+            android:layout_below="@id/mat"
+
+            />
+
+
+        <TextView
+            android:id="@+id/lb_prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prenom"
+            android:layout_below="@id/lb_nom"
+            android:layout_alignEnd="@id/lb_mat"
+            android:layout_alignParentStart="true"
+            android:layout_alignBaseline="@id/prenom"
+            />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/lb_nom"
+            android:layout_below="@id/nom"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/ajouter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Ajouter"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/supprimer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Supprimer"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/Chercher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Chercher"
+                android:layout_margin="10dp"/>
+        </TableRow>
+
+        <TableRow android:gravity="center">
+            <Button
+                android:id="@+id/modifier"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="modifier"
+                android:layout_margin="10dp"/>
+
+            <Button
+                android:id="@+id/Afficher_tous"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Afficher tous"
+                android:layout_margin="10dp"/>
+
+        </TableRow>
+    </TableLayout>
+
+
+
+
+</LinearLayout>
